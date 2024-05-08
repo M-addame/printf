@@ -19,7 +19,7 @@ int print_digit(long n, int base)
 	}
 
 	if (n < base)
-		count += print_char(symbols[n]);
+		return (print_char(symbols[n]));
 	else
 	{
 		count = print_digit(n / base, base);
